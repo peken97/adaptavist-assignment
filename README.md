@@ -1,6 +1,6 @@
 # Adaptavist Take Home Assignment 
 ## Technology Stack
-The technology stack I chose to use was TypeScript, AWS CDK, and AWS Lambda. The reason for using this tech stack was because it is what Stackadapt uses and I was curious to see how AWS CDK works. I 
+The technology stack I chose to use was TypeScript, AWS CDK, and AWS Lambda. The reason for using this tech stack was because it is what Adaptavist uses and I was curious to see how AWS CDK works. I had a great time using AWS CDK as I was impressed by how fast I could get my code deployed into the cloud. I do wish that I implemented a lambda layer so that I can lower the file size of the lambda.
 
 ## How to build and run
 You don't need to initialize the backend in order to use the Slack Application. You can just configure the Slack Application to point to the already deployed backend. If you wish to go down this route, skip the Backend Initialization guide and only do the Slack Application Initialization Guide.
