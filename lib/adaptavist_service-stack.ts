@@ -1,16 +1,13 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
+import * as norris_service from '../lib/norris_service';
 
 export class AdaptavistServiceStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
+    new norris_service.NorrisService(this, 'Widgets');
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'AdaptavistServiceQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+
   }
 }
