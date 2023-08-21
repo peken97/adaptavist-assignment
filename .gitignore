@@ -2,7 +2,7 @@
 !jest.config.js
 *.d.ts
 node_modules
-.AWSCLIV2.pkg
+AWSCLIV2.pkg
 
 # CDK asset staging directory
 .cdk.staging
