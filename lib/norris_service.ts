@@ -1,10 +1,6 @@
-import * as cdk from "aws-cdk-lib";
 import { Construct } from "constructs";
 import * as apigateway from "aws-cdk-lib/aws-apigateway";
 import * as lambda from "aws-cdk-lib/aws-lambda";
-import * as logs from "aws-cdk-lib/aws-logs";
-import * as iam from "aws-cdk-lib/aws-iam";
-import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
 
 export class NorrisService extends Construct {

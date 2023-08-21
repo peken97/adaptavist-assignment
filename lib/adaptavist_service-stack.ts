@@ -6,7 +6,7 @@ export class AdaptavistServiceStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    new norris_service.NorrisService(this, 'Widgets');
+    new norris_service.NorrisService(this, 'Norris');
 
 
   }

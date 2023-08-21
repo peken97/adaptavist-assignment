@@ -1,6 +1,4 @@
-import * as AWS from 'aws-sdk';
 import * as Axios from 'axios';
-
 
 export const handler = async (event) => {
     const client = Axios.default.create({});
