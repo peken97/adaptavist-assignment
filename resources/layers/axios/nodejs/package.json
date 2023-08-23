@@ -1,16 +1,15 @@
 {
-  "name": "resources",
+  "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "norris.js",
+  "main": "axios-utils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "types": "./norris.d.ts",
+  "types": "./axios-utils.d.ts",
   "dependencies": {
-    "aws-sdk": "^2.1440.0",
     "axios": "^1.4.0"
   }
 }

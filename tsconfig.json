@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "/opt/nodejs/hello": [
+        "resources/layers/slack-utils/hello"
+      ],
+      "/opt/nodejs/axios-utils": [
+        "resources/layers/slack-utils/axios-utils"
+      ],
+    },
     "target": "ES2020",
     "module": "commonjs",
     "lib": [
@@ -27,5 +36,5 @@
   "exclude": [
     "node_modules",
     "cdk.out"
-  ]
+  ],
 }
