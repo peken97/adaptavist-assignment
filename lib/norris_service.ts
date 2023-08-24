@@ -8,12 +8,14 @@ export class NorrisService extends Construct {
 
         const layerAxios = new lambda.LayerVersion(this, "AxiosLayer", {
             code: lambda.Code.fromAsset("resources/layers/axios"),
-            compatibleRuntimes: [lambda.Runtime.NODEJS_18_X]
+            compatibleRuntimes: [lambda.Runtime.NODEJS_18_X],
+            description: "Axios layer",
         });
 
         const layerSlackUtils = new lambda.LayerVersion(this, "SlackLayer", {
             code: lambda.Code.fromAsset("resources/layers/slack-utils"),
-            compatibleRuntimes: [lambda.Runtime.NODEJS_18_X]
+            compatibleRuntimes: [lambda.Runtime.NODEJS_18_X],
+            description: "Slack layer",
         });
 
         const handler = new lambda.Function(this, "NorrisHandler", {
